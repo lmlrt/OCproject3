@@ -75,12 +75,12 @@
 	margin-top: 25px;
 }
 
-#restaurents {
+#restaurants {
 	text-align: center;
 	width: 90%;
 	padding: 0% 5% 0% 5%;
 }
-.restaurent_list {
+.restaurant_list {
 	width: 100%;
 	height: 250px;
 	border-radius: 15px;
@@ -93,7 +93,7 @@
 	margin-bottom: 25px;
 	position: relative;
 }
-.restaurent_new::after {
+.restaurant_new::after {
 	content: "Nouveau";
 	position: absolute;
 	top: 15px;
@@ -105,7 +105,7 @@
 	color: #008766;
 }
 
-.restaurent_list .restaurent_img {
+.restaurant_list .restaurant_img {
 	width: 100%;
 	height: 72%;
 	overflow: hidden;
@@ -116,12 +116,12 @@
  	align-items: center;
 
 }
-.restaurent_list .restaurent_img img {
+.restaurant_list .restaurant_img img {
 	object-fit: cover;
 	width: 100%;
 	height: 180px;
 }
-.restaurent_text {
+.restaurant_text {
 	height: 28%;
 	width: 80%;
 	float: left;
@@ -129,23 +129,23 @@
 	display: inline-block;
 
 }
-.restaurent_name {
+.restaurant_name {
 	font-weight: bold;
 	display: block;
 	margin-left: 20px;
 	margin-top: 10px;
 }
-.restaurent_location {
+.restaurant_location {
 	margin-left: 20px;
 	display: block;
 	margin-top: 5px;
 }
-.restaurent_list .like {
+.restaurant_list .like {
 float: right;
 	margin-top: 20px;
 	margin-right: 15px;
 }
-.restaurent_list a {
+.restaurant_list a {
 	color: black;
 	text-decoration: none;
 }
