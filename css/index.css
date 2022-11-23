@@ -7,6 +7,14 @@
 	text-align: center;
 	box-shadow: #999 0px 30px 5px -30px inset;
 }
+#location input[type=text] {
+	background-color: #eee;
+	color: #333;
+	font-size: 18px;
+	text-align: center;
+	border: none;
+	font-family: 'Roboto', sans-serif;
+}
 #intro {
 	text-align: center;
 	width: 90%;
