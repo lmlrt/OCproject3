@@ -12,6 +12,49 @@
 	--loader_color_back: #eee;
 }
 
+
+/* ANIMATIONS */
+@keyframes loader {
+	0%{
+		visibility: visible;
+		background-color: rgba(255, 255, 255, 0.9);
+	}
+	92%{
+		background-color: rgba(255, 255, 255, 0.5);
+	}
+	100% {
+		background-color: rgba(255, 255, 255, 0);
+		visibility: hidden;
+	}
+}
+@keyframes rotation {
+	0% {
+		transform: rotate(0deg);
+		border-bottom-color: var(--primary);
+	}
+	50% {
+		border-bottom-color: var(--secondary);
+	}
+	100% {
+		transform: rotate(359deg);
+		border-bottom-color: var(--primary);
+	}
+}
+@keyframes antirotation {
+	0% {
+		transform: rotate(0deg);
+		border-bottom-color: var(--primary);
+	}
+	50% {
+		border-bottom-color: var(--secondary);
+	}
+	100% {
+		transform: rotate(359deg);
+		border-bottom-color: var(--primary);
+	}
+}
+
+
 body {
 	font-family: 'Roboto', sans-serif;
 	padding: 0px;
@@ -32,6 +75,41 @@ body {
 	text-decoration: none;
 }
 
+#loader_box {
+	width: 100%;
+	min-height: 800%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	visibility: hidden;
+	animation-name: loader;
+ 	animation-duration: 1s;
+ 	animation-iteration-count: 1;
+ 	z-index: 9;
+}
+#loader {
+	border: var(--loader_thickness) solid var(--loader_color_back);
+	border-bottom: var(--loader_thickness) solid var(--primary);
+	border-radius: 50%;
+	width: var(--loader_size);
+	height: var(--loader_size);
+	animation: rotation 2s linear infinite;
+	position: fixed;
+	top: calc(50% - var(--loader_size) / 2);
+	left: calc(50% - var(--loader_size) / 2);
+}
+#loader:after {
+	content: " ";
+	border: var(--loader_thickness) solid var(--loader_color_back);
+	border-bottom: var(--loader_thickness) solid var(--secondary);
+	border-radius: 50%;
+	margin-top: calc(2 * var(--loader_thickness));
+	margin-left: calc(2 * var(--loader_thickness));
+	display: block;
+	width: calc(var(--loader_size) / 1.33);
+	height: calc(var(--loader_size) / 1.33);
+	animation: antirotation 2s linear infinite;
+}
 
 .button_big {
 	color: #fff;
@@ -51,6 +129,7 @@ body {
 .button_big:hover {
 	box-shadow: 0px 5px 10px #888;
 }
+
 .like {
 	color: black;
 	font-size: 21px;
@@ -70,6 +149,7 @@ body {
 .like:hover:after {
 	height: 21px;
 }
+
 
 footer {
 	height: 200px;

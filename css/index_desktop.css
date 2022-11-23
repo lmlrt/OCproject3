@@ -1,0 +1,34 @@
+#intro {
+	display: inline-block;
+	width: 49%;
+	height: 400px;
+	padding: 0px;
+}
+#intro_title {
+	margin-top: 15%;
+	margin-bottom: 15%;
+}
+#intro span {
+	margin-bottom: 10%;
+}
+ #fonc {
+	display: inline-block;
+	width: 50%;
+	background: none;
+	padding: 0px;
+}
+#restaurents {
+	padding:0px 0px 0px 0px;
+	width: 100%;
+	text-align: center;
+}
+.restaurent_list {
+	width: 40%;
+	margin-left: 3%;
+	margin-right: 3%;
+	overflow: hidden;
+}
+
+#restaurents .title {
+	padding: 30px 0px 30px 0px;
+}

@@ -1,0 +1,10 @@
+.etape {
+	width:40%;
+	display: inline-block;	
+	margin-right: 2.5%;
+	margin-left: 2.5%;
+}
+
+#restaurent_image {
+	height: 275px;
+}
