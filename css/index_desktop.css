@@ -1,24 +1,29 @@
 #intro {
 	display: inline-block;
-	width: 49%;
-	height: 400px;
+	width: 50%;
+	height: 450px;
 	padding: 0px;
+	background: #ddd;
+	float: left;
+	margin-bottom: 50px;
 }
 #intro_title {
-	margin-top: 15%;
-	margin-bottom: 15%;
+	margin-top: 10%;
 }
 #intro span {
 	margin-bottom: 10%;
 }
- #fonc {
+#fonc {
+	float: right;
 	display: inline-block;
 	width: 50%;
-	background: none;
+	background: #ddd;
 	padding: 0px;
+	vertical-align: top;
+	margin-bottom: 50px;
 }
 #restaurants {
-	padding:0px 0px 0px 0px;
+	padding:50px 0px 0px 0px;
 	width: 100%;
 	text-align: center;
 }
