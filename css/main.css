@@ -160,8 +160,9 @@ footer {
 	padding: 50px;
 	color: #fff;
 }
-footer header {
+footer h2 {
 	font-family: 'Shrikhand', cursive;
+	font-size: 18px;
 }
 footer a {
 	text-decoration: none;
