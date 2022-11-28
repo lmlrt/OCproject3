@@ -94,7 +94,7 @@
 }
 
 .etape_item_description {
-	width: 90%;
+	width: calc(100% - 70px);
 	display: inline-block;
 	text-overflow: ellipsis;
 	white-space: nowrap;
@@ -104,21 +104,25 @@
 	width: calc(100% - 50px);
 	height: 75px;
 	display: inline-block;
-	float: left;
 	padding-left: 25px;
 	padding-right: 25px;
 	transition: width 0.5s;
+	position: relative;
 }
 .etape_item_name {
 	display: block;
 	font-weight: bold;
 	margin-top: 20px;
 	margin-bottom: 5px;
+	width: calc(100% - 70px);
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
 }
 .etape_item_price {
-	float: right;
-	margin-top: -17px;
-
+	position: absolute;
+	top: 30px;
+	right: 25px;
 	font-weight: bold;
 }
 .item_check {
